@@ -1,0 +1,46 @@
+.london {
+  background: url(../../static/img/london/road.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  padding: 85px;
+  @media (max-width: 770px)  {
+    padding: 50px 20px;
+    margin-bottom: 20px;
+  }
+  &_subtitle {
+    color: rgb(255, 81, 0);
+    font-size: 16px;
+    margin-bottom: 15px;
+    max-width: 70%;
+  }
+  &_title {
+    font-size: 62px;
+    max-width: 37%;
+    margin-bottom: 25px;
+    &--red {
+      color: rgb(255, 81, 0);
+    }
+    @media (max-width: 770px) {
+      max-width: 80%;
+    }
+    @media (max-width: 375px) {
+      font-size: 55px;
+    }
+    @media (max-width: 325px) {
+      font-size: 50px;
+    }
+  }
+  &_button {
+    background-color: rgb(255, 81, 0);
+    color: #fff;
+    padding: 15px 45px;
+    border: none;
+    border-radius: 10px;
+    @media (max-width: 415px) {
+      padding: 15px;
+      width: 55%;
+    }
+  }
+}

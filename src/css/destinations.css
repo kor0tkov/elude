@@ -1,0 +1,100 @@
+.destinations {
+  padding: 20px 0; }
+  .destinations_title {
+    font-size: 40px;
+    padding: 0 50px;
+    margin-bottom: 10px; }
+    @media (max-width: 770px) {
+      .destinations_title {
+        padding: 0 20px; } }
+  .destinations_subtitle {
+    padding: 0 50px;
+    margin-bottom: 30px; }
+    @media (max-width: 770px) {
+      .destinations_subtitle {
+        padding: 0 20px; } }
+  .destinations_cities {
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin-bottom: 20px; }
+    @media (min-width: 900px) {
+      .destinations_cities {
+        overflow-x: hidden; } }
+  .destinations_img {
+    height: 340px;
+    border-radius: 7px;
+    text-align: center;
+    margin-bottom: 10px; }
+    @media (max-width: 770px) {
+      .destinations_img {
+        height: 290px;
+        width: 200px; } }
+    .destinations_img-tokyo {
+      background: url(../../static/img/destinations/tokyo.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .destinations_img-moscow {
+      background: url(../../static/img/destinations/moscow.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .destinations_img-marocco {
+      background: url(../../static/img/destinations/marocco.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .destinations_img-london {
+      background: url(../../static/img/destinations/london.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+  .destinations_item {
+    width: 25%;
+    margin-right: 20px; }
+    @media (max-width: 770px) {
+      .destinations_item {
+        margin-right: 15px;
+        max-width: 200px;
+        width: auto; } }
+    .destinations_item:first-child {
+      padding-left: 50px; }
+      @media (max-width: 770px) {
+        .destinations_item:first-child {
+          padding-left: 20px; } }
+    .destinations_item:last-child {
+      margin: 0;
+      padding-right: 50px; }
+      @media (max-width: 770px) {
+        .destinations_item:last-child {
+          padding-right: 20px; } }
+    .destinations_item-wrapper {
+      display: flex;
+      justify-content: space-between;
+      overflow-y: hidden;
+      overflow-x: scroll; }
+      @media (min-width: 900px) {
+        .destinations_item-wrapper {
+          overflow-x: hidden; } }
+    .destinations_item-name {
+      line-height: 290px;
+      font-size: 26px;
+      color: #fff; }
+    .destinations_item-price {
+      font-size: 14px;
+      color: #ff5100;
+      margin-bottom: 10px; }
+    .destinations_item-text {
+      margin-bottom: 15px; }
+    .destinations_item-duration {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.274); }
+  .destinations_swipe {
+    padding: 0 50px;
+    font-size: 14px; }
+    .destinations_swipe::after {
+      content: ''; }
+    @media (max-width: 770px) {
+      .destinations_swipe {
+        padding: 0 20px; } }

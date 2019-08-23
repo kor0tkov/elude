@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'DINpro';
+  src: url('../../static/fonts/DINPro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINPro-bold';
+  src: url('../../static/fonts/DINPro-bold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0 auto;
+  font-family: DINpro;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: DINPro-bold;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}

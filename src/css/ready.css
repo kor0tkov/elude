@@ -1,0 +1,33 @@
+.ready {
+  background: url(../../static/img/ready/flight.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 360px;
+  padding: 20px 20px; }
+  .ready_title {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 30px; }
+    @media (max-width: 360px) {
+      .ready_title {
+        font-size: 35px; } }
+    @media (max-width: 375px) {
+      .ready_title {
+        font-size: 45px; } }
+  .ready_btn {
+    background-color: #0053b3;
+    color: #fff;
+    padding: 15px 45px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; }
+    @media (max-width: 415px) {
+      .ready_btn {
+        padding: 15px;
+        width: 55%; } }
