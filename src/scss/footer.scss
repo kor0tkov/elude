@@ -1,12 +1,32 @@
 .footer {
   display: flex;
   justify-content: space-between;
+  flex: 0 0 auto;
+  background-color: rgb(241, 241, 241);
   padding: 20px 50px;
+  color: rgba(0, 0, 0, 0.274);
   @media (max-width: 770px) {
     padding: 20px;
+    flex-direction: column;
+  }
+  &_links {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    @media (max-width: 770px) {
+      width: 100%;
+    }
+  }
+  &-text {
+    @media (max-width: 770px) {
+      margin-bottom: 20px;
+    }
   }
   &-link {
-    color: rgba(0, 0, 0, 0.274);
     text-decoration: none;
+    color: rgba(0, 0, 0, 0.274);
+    &:first-child {
+      margin-right: 20px;
+    }
   }
 }

@@ -17,6 +17,7 @@
     width: 100%;
     overflow-y: hidden;
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
     margin-bottom: 20px; }
     @media (min-width: 900px) {
       .destinations_cities {
@@ -73,7 +74,8 @@
       display: flex;
       justify-content: space-between;
       overflow-y: hidden;
-      overflow-x: scroll; }
+      overflow-x: scroll;
+      -webkit-overflow-scrolling: touch; }
       @media (min-width: 900px) {
         .destinations_item-wrapper {
           overflow-x: hidden; } }

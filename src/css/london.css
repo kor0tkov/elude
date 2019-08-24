@@ -34,7 +34,8 @@
     color: #fff;
     padding: 15px 45px;
     border: none;
-    border-radius: 10px; }
+    border-radius: 10px;
+    cursor: pointer; }
     @media (max-width: 415px) {
       .london_button {
         padding: 15px;

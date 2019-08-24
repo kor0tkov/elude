@@ -1,0 +1,71 @@
+.join {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 50px; }
+  @media (max-width: 770px) {
+    .join {
+      padding: 50px 20px; } }
+  .join_title {
+    font-size: 40px;
+    margin-bottom: 20px; }
+  .join_text {
+    font-size: 18px;
+    max-width: 33%;
+    margin-bottom: 40px;
+    text-align: center; }
+    @media (max-width: 770px) {
+      .join_text {
+        width: 100%;
+        max-width: 100%; } }
+  .join_input {
+    width: 100%;
+    color: black;
+    padding: 15px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    border-radius: 5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    outline: none; }
+    .join_input--name {
+      width: 33%;
+      position: relative;
+      margin-bottom: 40px; }
+      .join_input--name::before {
+        content: 'Your Name';
+        position: absolute;
+        top: -25px;
+        color: #ff5100; }
+      @media (max-width: 770px) {
+        .join_input--name {
+          width: 90%;
+          margin-right: 20px; } }
+    .join_input--email {
+      width: 33%;
+      position: relative;
+      margin-bottom: 40px; }
+      .join_input--email::before {
+        content: 'Your Email';
+        position: absolute;
+        top: -25px;
+        color: #ff5100; }
+      @media (max-width: 770px) {
+        .join_input--email {
+          width: 90%;
+          margin-right: 20px; } }
+    .join_input--city {
+      width: 33%;
+      position: relative;
+      margin-bottom: 40px; }
+      .join_input--city::before {
+        content: 'Home City';
+        position: absolute;
+        top: -25px;
+        color: #ff5100; }
+      @media (max-width: 770px) {
+        .join_input--city {
+          width: 90%;
+          margin-right: 20px; } }

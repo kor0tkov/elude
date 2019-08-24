@@ -1,0 +1,81 @@
+.join {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  @media (max-width: 770px) {
+    padding: 50px 20px;
+  }
+  &_title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  &_text {
+    font-size: 18px;
+    max-width: 33%;
+    margin-bottom: 40px;
+    text-align: center;
+    @media (max-width: 770px) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  &_input {
+    width: 100%;
+    color: black;
+    padding: 15px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    border-radius: 5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    outline: none;
+    &--name {
+      width: 33%;
+      position: relative;
+      margin-bottom: 40px;
+      &::before {
+        content: 'Your Name';
+        position: absolute;
+        top: -25px;
+        color: rgb(255, 81, 0);
+      }
+      @media (max-width: 770px) {
+        width: 90%;
+        margin-right: 20px;
+      }
+    }
+    &--email {
+      width: 33%;
+      position: relative;
+      margin-bottom: 40px;
+      &::before {
+        content: 'Your Email';
+        position: absolute;
+        top: -25px;
+        color: rgb(255, 81, 0);
+      }
+      @media (max-width: 770px) {
+        width: 90%;
+        margin-right: 20px;
+      }
+    }
+    &--city {
+      width: 33%;
+      position: relative;
+      margin-bottom: 40px;
+      &::before {
+        content: 'Home City';
+        position: absolute;
+        top: -25px;
+        color: rgb(255, 81, 0);
+      }
+      @media (max-width: 770px) {
+        width: 90%;
+        margin-right: 20px;
+      }
+    }
+  }
+}

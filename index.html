@@ -14,10 +14,12 @@
     <link rel="stylesheet" href="src/css/footer.css">
   </head>
   <body>
-    <header class="header">
-      <img class="logo" alt="Elude" src="">
+    <header class="header" id="header">
+      <a href="index.html" class="logo-link">
+        <img class="logo" alt="Elude" src="">
+      </a>
       <nav class="navigation">
-        <a href="#" class="navigation_link">Join Us</a>
+        <a href="join.html" class="navigation_link">Join Us</a>
         <a href="#" class="navigation_link">Trips</a>
       </nav>
     </header>
@@ -114,12 +116,18 @@
           </p>
         </div>
       </section>
-      <footer class="footer">
-        <a href="#" class="footer-link">Copyright</a>
-        <a href="#" class="footer-link">Copyright</a>
-        <a href="#" class="footer-link">Copyright</a>
-        <a href="#" class="footer-link">Copyright</a>
-      </footer>
     </main>
+    <footer class="footer">
+      <p class="footer-text">© Copyright 2019 Elude Afpp</p>
+      <div class="footer_links">
+        <div class="footer_links-inner">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms</a>
+        </div>
+        <a href="#header" class="footer-link lazy-link">Go to top</a>
+      </div>
+    </footer>
+    <script src="plugins/jquery-3.3.1.min.js"></script>
+    <script src="src/js/lazy-link.js"></script>
   </body>
 </html>
