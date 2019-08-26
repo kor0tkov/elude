@@ -24,7 +24,7 @@ $('#form').on('submit', (e) => {
   e.preventDefault();
   const hasValues = !!(user.name && user.mail && user.city);
   if (hasValues) {
-    console.log('try #1')
+    console.log('try #2')
     $.post('../php/mail.php', user, function (response) {
       console.log(response);
     }, 'json');
