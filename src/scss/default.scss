@@ -58,7 +58,7 @@ p {
   color: #191919;
 }
 
-button {
+.button {
   font-family: Montserrat-Medium, sans-serif;
   margin: 0;
   font-size: 18px;
@@ -68,6 +68,9 @@ button {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  text-decoration: none;
+  display: block;
+  text-align: center;
 }
 
 .footer-bottom {

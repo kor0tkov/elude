@@ -19,6 +19,9 @@
     @media (max-width: 770px) {
       .footer_text {
         max-width: 80%; } }
+    @media (max-width: 330px) {
+      .footer_text {
+        max-width: 90%; } }
     .footer_text--bold {
       font-family: Montserrat-Medium;
       color: #706163;

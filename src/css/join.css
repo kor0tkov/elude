@@ -9,7 +9,7 @@
   border: 1px solid #000;
   padding: 50px;
   box-sizing: border-box; }
-  @media (max-width: 770px) {
+  @media (max-width: 415px) {
     .join {
       padding: 50px 20px;
       min-width: 100%;
@@ -38,8 +38,11 @@
     margin-bottom: 22px; }
 
 .join_btn {
-  width: 100%;
+  max-width: 100%;
   padding: 20px;
   color: #fff;
   background-color: #1b4175;
   margin-top: 63px; }
+  @media (max-width: 330px) {
+    .join_btn {
+      margin-top: 0; } }

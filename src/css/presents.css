@@ -44,7 +44,6 @@
     max-width: 35%; }
     @media (max-width: 415px) {
       .presents_button {
-        width: 100%;
         max-width: 100%;
         padding: 25px 30px;
         margin-bottom: 70px; } }
