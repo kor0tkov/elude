@@ -16,7 +16,7 @@ $("#city").on("change paste keyup", function () {
   user.city = $(this).val();
 });
 
-$('#form').on('keyup', (e) => {
+$('#form').on('change paste keyup', (e) => {
   document.getElementById('#button').disabled = !(user.name && user.mail && user.city);
 })
 
@@ -24,8 +24,8 @@ $('#form').on('submit', (e) => {
   e.preventDefault();
   const hasValues = !!(user.name && user.mail && user.city);
   if (hasValues) {
-    console.log('try #2')
-    $.post('../php/mail.php', user, function (response) {
+    console.log('try #3')
+    $.post('mail.php', user, function (response) {
       console.log(response);
     }, 'json');
   }
