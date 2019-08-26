@@ -1,11 +1,16 @@
 @font-face {
-  font-family: 'DINpro';
-  src: url("../../static/fonts/DINPro.ttf") format("truetype");
+  font-family: 'Montserrat-Light';
+  src: url("../../static/fonts/Montserrat-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'DINPro-bold';
-  src: url("../../static/fonts/DINPro-bold.otf") format("truetype");
+  font-family: 'Montserrat-Medium';
+  src: url("../../static/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url("../../static/fonts/Montserrat-SemiBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 body,
@@ -13,17 +18,44 @@ html {
   height: 100%;
   padding: 0;
   margin: 0 auto;
-  font-family: DINpro; }
+  font-family: Montserrat-Light, sans-serif; }
+
+main {
+  background-color: #f8f8f8; }
+
+footer {
+  background-color: #191919; }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: DINPro-bold;
-  margin: 0; }
+  font-family: Montserrat-SemiBold, sans-serif;
+  letter-spacing: 0.2px;
+  margin: 0;
+  color: #191919; }
+
+a {
+  font-family: Montserrat-Medium, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  color: #191919; }
 
 p {
-  margin: 0; }
+  margin: 0;
+  letter-spacing: 0.2px;
+  color: #191919; }
+
+button {
+  font-family: Montserrat-Medium, sans-serif;
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  color: #fff;
+  background-color: #d03c31;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer; }
 
 .footer-bottom {
   display: flex;

@@ -1,5 +1,5 @@
 .ready {
-  background: url(../../static/img/ready/flight.jpg);
+  background: url('../../static/img/ready/footer-image@2x.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -9,28 +9,38 @@
   align-items: center;
   box-sizing: border-box;
   min-height: 360px;
-  padding: 20px 20px;
-  &_title {
-    font-size: 50px;
-    color: #fff;
-    margin-bottom: 30px;
-    @media (max-width: 360px) {
-      font-size: 35px;
+  padding: 0;
+  @media (max-width: 770px) {
+    max-height: 550px;
+  }
+  &_inner {
+    max-width: 940px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 330px 0 160px 0;
+    @media (max-width: 770px) {
+      padding: 215px 0 70px 0;
     }
-    @media (max-width: 375px) {
-      font-size: 45px;
+  }
+  &_title {
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 40px;
+    @media (max-width: 770px) {
+      font-size: 36px;
+      line-height: 48px;
+      letter-spacing: 0.12px;
     }
   }
   &_btn {
-    background-color: rgb(0, 83, 179);
-    color: #fff;
-    padding: 15px 45px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+    background-color: #d03c31;
+    padding: 20px 70px;
     @media (max-width: 415px) {
-      padding: 15px;
-      width: 55%;
+      padding: 25px;
+      width: 100%;
     }
   }
 }
