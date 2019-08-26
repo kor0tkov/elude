@@ -9,14 +9,16 @@
   background: rgba(0, 0, 0, 0.5); /* цвет фона */
   z-index: 1050;
   opacity: 0; /* по умолчанию модальное окно прозрачно */
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in; /* анимация перехода */
+  transform: translateY(-25px);
+  -webkit-transition: .25s;
+  -moz-transition: .25s;
+  transition: .25s; /* анимация перехода */
   pointer-events: none; /* элемент невидим для событий мыши */
 }
 
 /* при отображении модального окно */
 .modal:target {
+  transform: translateY(0);
   opacity: 1;
   pointer-events: auto;
   overflow-y: hidden;

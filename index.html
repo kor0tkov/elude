@@ -104,18 +104,27 @@
       <section class="join_modal">
         <div id="openModal" class="modal">
             <div class="modal-dialog">
-                <div class="modal-content join">
+                <form id="form" class="modal-content join">
                   <h1 class="join_title">Join Us</h1>
-                  <a href="#close" title="Close" class="close">×</a>
+                  <a href="#" title="Close" class="close">×</a>
                   <p class="join_text">
                     Keep up-to-date and be amongst the first to get access 
                     to our platform.
                   </p>
-                  <input placeholder="Your Name" type="text" class="join_input">
-                  <input placeholder="E-mail" type="text" class="join_input">
-                  <input placeholder="Home City" type="text" class="join_input">
-                  <a class="button join_btn">Submit</a>
-                </div>
+                  <label class="join_input">
+                    <input id="name" type="text" class="join_input-input" required>
+                    <span class="join_input-placeholder">Your Name</span>
+                  </label>
+                  <label class="join_input">
+                    <input id="mail" type="text" class="join_input-input" required>
+                    <span class="join_input-placeholder">E-mail</span>
+                  </label>
+                  <label class="join_input">
+                    <input id="city" type="text" class="join_input-input" required>
+                    <span class="join_input-placeholder">Home City</span>
+                  </label>
+                  <button id="#button" class="button join_btn" disabled>Submit</button>
+                </form>
             </div>
         </div>
       </section>
@@ -137,5 +146,6 @@
     </footer>
     <script src="plugins/jquery-3.3.1.min.js"></script>
     <script src="src/js/lazy-link.js"></script>
+    <script src="src/js/form.js"></script>
   </body>
 </html>
