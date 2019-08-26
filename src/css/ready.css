@@ -33,6 +33,9 @@
         font-size: 36px;
         line-height: 48px;
         letter-spacing: 0.12px; } }
+    @media (max-width: 340px) {
+      .ready_title {
+        font-size: 32px; } }
   .ready_btn {
     background-color: #d03c31;
     padding: 20px 70px; }

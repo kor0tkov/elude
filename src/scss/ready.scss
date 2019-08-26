@@ -34,6 +34,9 @@
       line-height: 48px;
       letter-spacing: 0.12px;
     }
+    @media (max-width: 340px) {
+      font-size: 32px;
+    }
   }
   &_btn {
     background-color: #d03c31;

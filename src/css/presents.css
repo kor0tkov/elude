@@ -36,6 +36,9 @@
         line-height: 64px;
         margin-bottom: 40px;
         max-width: 90%; } }
+    @media (max-width: 340px) {
+      .presents_title {
+        font-size: 54px; } }
   .presents_button {
     padding: 20px 30px;
     max-width: 35%; }
