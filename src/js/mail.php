@@ -1,7 +1,8 @@
 <?php
 if($_POST) {
   $user = $_POST;
-  printf(user);
+  printf($user);
+  printf('test');
   $to_Email = "quanoxy@gmail.com"; 
   $subject = 'Thank you'; 
   $message = 'hello, my name is '.$user.name;
