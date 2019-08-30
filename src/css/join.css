@@ -28,7 +28,7 @@
     line-height: 30px;
     letter-spacing: 0;
     margin-bottom: 30px;
-    max-width: 80%; }
+    min-height: 50px; }
     @media (max-width: 980px) {
       .join_text {
         width: 100%;
@@ -70,13 +70,11 @@
     color: #fff;
     background-color: #1b4175;
     transition: .25s;
-    width: 100%; }
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 0; }
     .join_btn:hover:not(:disabled) {
       background-color: #133059; }
     .join_btn:disabled {
       opacity: 0.2;
       cursor: not-allowed; }
-    @media (max-width: 560px) {
-      .join_btn {
-        margin-top: auto;
-        margin-bottom: 0; } }

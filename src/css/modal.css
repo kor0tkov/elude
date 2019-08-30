@@ -63,7 +63,8 @@
   background-color: #fff;
   background-clip: padding-box;
   outline: 0;
-  padding-top: 30px; }
+  padding-top: 30px;
+  min-height: 360px; }
 
 /* свойства для заголовка модального окна */
 .modal-header {
