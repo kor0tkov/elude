@@ -2,8 +2,8 @@
 if($_POST) {
   $user = $_POST;
   $to_Email = "hello@voynov.co";
-  $subject = 'Привет! Перезвоните мне!';
-  $message = 'Имя: '.$user['name'].' E-mail: '.$user['mail'].' Город: '.$user['city'];
+  $subject = 'New Elude Request.';
+  $message = 'Name: '.$user['name'].' E-mail: '.$user['mail'].' City: '.$user['city'];
   $response;
 
   if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
@@ -15,7 +15,7 @@ if($_POST) {
     $response = json_encode(array('text' => 'Не могу отправить почту! Пожалуйста, проверьте ваши настройки PHP почты.'));
     die($response);
     } else {
-    $response = json_encode(array('text' => 'Спасибо! '.$user['name'] .', ваше сообщение отправлено.'));
+    $response = json_encode(array('text' => 'Hello '.$user['name'] .', your message is send.'));
     die($response);
   }
 }
