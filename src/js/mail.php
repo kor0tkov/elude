@@ -1,8 +1,8 @@
 <?php
 if($_POST) {
   $user = $_POST;
-  $to_Email = "quanoxy@gmail.com"; 
-  $subject = 'Thank you'; 
+  $to_Email = "hello@voynov.co";
+  $subject = 'Привет! Перезвоните мне!';
   $message = 'Имя: '.$user['name'].' E-mail: '.$user['mail'].' Город: '.$user['city'];
   $response;
 

@@ -2,7 +2,9 @@ const user = {
     name: '',
     mail: '',
     city: ''
-}
+};
+
+const formContainer = $('#form');
 
 $("#name").on("change paste keyup", function () {
     user.name = $(this).val()
@@ -14,10 +16,6 @@ $("#mail").on("change paste keyup", function () {
 
 $("#city").on("change paste keyup", function () {
     user.city = $(this).val();
-});
-
-$('#form').on('change paste keyup', (e) => {
-    toggleButton(!(user.name && user.mail && user.city));
 });
 
 function toggleButton(boolean) {
@@ -32,7 +30,11 @@ function sendMail() {
     })
 }
 
-$('#form').on('submit', (e) => {
+formContainer.on('change paste keyup', (e) => {
+    toggleButton(!(user.name && user.mail && user.city));
+});
+
+formContainer.on('submit', (e) => {
     e.preventDefault();
     const hasValues = !!(user.name && user.mail && user.city);
     if (hasValues) {
