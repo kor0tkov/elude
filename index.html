@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="src/css/footer.css">
     <link rel="stylesheet" href="src/css/modal.css">
     <link rel="stylesheet" href="src/css/join.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   </head>
   <body>
     <header class="header" id="header">
@@ -29,11 +32,25 @@
       <section class="presents">
         <section class="presents_inner">
           <h3 class="presents_subtitle">Elude presents</h3>
-          <h1 class="presents_title">
-            London for
-            <span class="presents_title--red">$500</span>,
-            because we can
-          </h1>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <h1 class="presents_title swiper-slide">
+                    London for
+                    <span class="presents_title--red">$500</span>,
+                    because we can
+                </h1>
+                <h1 class="presents_title swiper-slide">
+                    Moscow for
+                    <span class="presents_title--red">$500</span>,
+                    because we can
+                </h1>
+                <h1 class="presents_title swiper-slide">
+                    Morocco for
+                    <span class="presents_title--red">$500</span>,
+                    because we can
+                </h1>
+            </div>
+          </div>
           <a href="#openModal" class="button presents_button">Get Started</a>
         </section>
       </section>
@@ -147,5 +164,6 @@
     <script src="plugins/jquery-3.3.1.min.js"></script>
     <script src="src/js/lazy-link.js"></script>
     <script src="src/js/form.js"></script>
+    <script src="src/js/text.js"></script>
   </body>
 </html>

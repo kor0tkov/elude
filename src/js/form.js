@@ -24,9 +24,8 @@ $('#form').on('submit', (e) => {
   e.preventDefault();
   const hasValues = !!(user.name && user.mail && user.city);
   if (hasValues) {
-    console.log('try #5')
     $.post('./src/js/mail.php', user, function (response) {
-      console.log(response);
+      window.location.hash = null;
     }, 'json');
   }
 })
