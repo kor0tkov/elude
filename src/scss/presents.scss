@@ -1,9 +1,6 @@
 @import "./vars";
 
 .keyword {
-  //position: absolute;
-  //left: 0;
-  //opacity:0
   opacity: 1;
   transition: .25s;
 
@@ -13,7 +10,7 @@
 }
 
 .presents {
-  background: url('../../static/img/presents/header-image@2x.png') no-repeat top center;
+  background: url('../../static/img/presents/header-image.jpg') no-repeat top center;
   background-size: cover;
   height: 100%;
   padding: 150px 0 210px 0;
@@ -65,7 +62,6 @@
     }
 
     &-keyword {
-      //@extend .keyword;
       user-select: none;
     }
 
@@ -81,7 +77,6 @@
         content: ',';
         color: #000;
       }
-      //@extend .keyword;
     }
 
     @media (max-width: 980px) {
