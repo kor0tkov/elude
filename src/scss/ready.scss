@@ -15,13 +15,15 @@
   &_inner {
     max-width: $max-width;
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
     padding: 330px 0 160px 0;
-    @media (max-width: 770px) {
-      padding: 215px 0 70px 0;
+    @media (max-width: 560px) {
+      padding: 215px 20px 70px;
+      width: 100%;
     }
   }
   &_title {
@@ -39,5 +41,9 @@
   }
   &_btn {
     background-color: $elude-red;
+
+    &:hover {
+      background-color: $elude-red--hover;
+    }
   }
 }

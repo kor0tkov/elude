@@ -79,10 +79,6 @@ p {
   text-align: center;
   transition: .25s;
 
-  &:hover {
-    opacity: .9;
-  }
-
   @media (max-width: 560px) {
     width: 100%;
   }

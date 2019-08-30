@@ -17,15 +17,19 @@
     @media (max-width: 980px) {
       .header_inner {
         padding: 20px; } }
+  .header .logo-link {
+    height: 36px; }
   .header .navigation_link {
     text-decoration: none;
-    color: black;
-    padding-left: 15px;
     font-weight: 900; }
+    .header .navigation_link:not(:last-child) {
+      margin-right: 40px; }
     @media (max-width: 770px) {
       .header .navigation_link {
         font-size: 14px; } }
 
-@media (max-width: 770px) {
-  .logo {
-    max-width: 85%; } }
+.logo {
+  height: 100%; }
+  @media (max-width: 770px) {
+    .logo {
+      max-width: 85%; } }

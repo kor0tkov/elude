@@ -22,15 +22,20 @@
     }
   }
 
+  .logo-link {
+    height: 36px;
+  }
+
   .navigation {
-    .logo-link {
-    }
 
     &_link {
       text-decoration: none;
-      color: black;
-      padding-left: 15px;
       font-weight: 900;
+
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+
       @media (max-width: 770px) {
         font-size: 14px;
       }
@@ -39,6 +44,7 @@
 }
 
 .logo {
+  height: 100%;
   @media (max-width: 770px) {
     max-width: 85%;
   }

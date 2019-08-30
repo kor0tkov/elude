@@ -91,10 +91,12 @@
   }
 
   &_button {
-    max-width: 35%;
     background-color: $elude-red;
+
+    &:hover {
+      background-color: $elude-red--hover;
+    }
     @media (max-width: 560px) {
-      max-width: 100%;
       margin: 0;
     }
   }

@@ -65,9 +65,9 @@
       .presents_title {
         font-size: 54px; } }
   .presents_button {
-    max-width: 35%;
     background-color: #d03c31; }
+    .presents_button:hover {
+      background-color: #aa332b; }
     @media (max-width: 560px) {
       .presents_button {
-        max-width: 100%;
         margin: 0; } }

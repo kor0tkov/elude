@@ -64,8 +64,6 @@ p {
   box-sizing: border-box;
   text-align: center;
   transition: .25s; }
-  .button:hover {
-    opacity: .9; }
   @media (max-width: 560px) {
     .button {
       width: 100%; } }

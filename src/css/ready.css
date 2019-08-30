@@ -14,14 +14,16 @@
   .ready_inner {
     max-width: 960px;
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
     padding: 330px 0 160px 0; }
-    @media (max-width: 770px) {
+    @media (max-width: 560px) {
       .ready_inner {
-        padding: 215px 0 70px 0; } }
+        padding: 215px 20px 70px;
+        width: 100%; } }
   .ready_title {
     font-size: 60px;
     color: #fff;
@@ -36,3 +38,5 @@
         font-size: 32px; } }
   .ready_btn {
     background-color: #d03c31; }
+    .ready_btn:hover {
+      background-color: #aa332b; }
