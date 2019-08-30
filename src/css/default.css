@@ -54,6 +54,9 @@ p {
   color: #fff;
   border: none;
   border-radius: 8px;
+  height: 70px;
+  line-height: 30px;
+  padding: 20px;
   cursor: pointer;
   text-decoration: none;
   display: block;

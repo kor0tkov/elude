@@ -35,8 +35,4 @@
       .ready_title {
         font-size: 32px; } }
   .ready_btn {
-    background-color: #d03c31;
-    padding: 20px 70px; }
-    @media (max-width: 415px) {
-      .ready_btn {
-        padding: 25px; } }
+    background-color: #d03c31; }

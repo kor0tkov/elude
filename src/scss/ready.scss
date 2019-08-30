@@ -39,9 +39,5 @@
   }
   &_btn {
     background-color: $elude-red;
-    padding: 20px 70px;
-    @media (max-width: 415px) {
-      padding: 25px;
-    }
   }
 }

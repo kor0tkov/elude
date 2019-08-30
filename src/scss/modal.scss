@@ -8,8 +8,6 @@
   z-index: 103;
   opacity: 0; /* по умолчанию модальное окно прозрачно */
   transform: translateY(-25px);
-  -webkit-transition: .25s;
-  -moz-transition: .25s;
   transition: .25s; /* анимация перехода */
   pointer-events: none; /* элемент невидим для событий мыши */
 
@@ -39,9 +37,10 @@
   width: auto;
   margin: 10px;
   top: 50px;
-  @media (max-width: 770px) {
+  @media (max-width: 560px) {
     margin: 0;
     width: 100%;
+    height: 100%;
     top: 0;
   }
 }
@@ -71,6 +70,9 @@
   border: 1px solid rgba(0, 0, 0, .2);
   border-radius: .3rem;
   outline: 0;
+  @media (max-width: 560px) {
+    border-radius: 0;
+  }
 }
 
 @media (min-width: 768px) {

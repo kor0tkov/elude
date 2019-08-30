@@ -65,11 +65,9 @@
       .presents_title {
         font-size: 54px; } }
   .presents_button {
-    padding: 20px 30px;
     max-width: 35%;
     background-color: #d03c31; }
     @media (max-width: 560px) {
       .presents_button {
         max-width: 100%;
-        padding: 25px 30px;
         margin: 0; } }
