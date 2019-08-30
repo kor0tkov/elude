@@ -1,7 +1,5 @@
 .ready {
-  background: url("../../static/img/ready/footer-image@2x.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../../static/img/ready/footer-image@2x.png") no-repeat center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -14,7 +12,7 @@
     .ready {
       max-height: 550px; } }
   .ready_inner {
-    max-width: 940px;
+    max-width: 960px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,5 +39,4 @@
     padding: 20px 70px; }
     @media (max-width: 415px) {
       .ready_btn {
-        padding: 25px;
-        width: 80%; } }
+        padding: 25px; } }

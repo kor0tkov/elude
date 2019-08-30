@@ -11,7 +11,6 @@
   box-sizing: border-box; }
   @media (max-width: 415px) {
     .join {
-      padding: 50px 20px;
       min-width: 100%;
       height: 100%;
       border: none;
@@ -40,10 +39,12 @@
       line-height: 30px;
       border: none;
       outline: none;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+      border-bottom: 1px solid rgba(51, 51, 51, 0.2);
       padding: 10px 0;
       height: 20px;
       width: 100%; }
+      .join_input-input:focus {
+        border-bottom: 1px solid #333; }
       .join_input-input:focus + .join_input-placeholder, .join_input-input:valid + .join_input-placeholder {
         font-size: 14px;
         bottom: 100%;

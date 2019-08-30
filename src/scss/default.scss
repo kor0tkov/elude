@@ -1,3 +1,5 @@
+@import "./vars";
+
 @font-face {
   font-family: 'Montserrat-Light';
   src: url('../../static/fonts/Montserrat-Light.ttf') format('truetype');
@@ -64,17 +66,33 @@ p {
   font-size: 18px;
   letter-spacing: 0.2px;
   color: #fff;
-  background-color: #d03c31;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   text-decoration: none;
   display: block;
+  width: 300px;
+  box-sizing: border-box;
   text-align: center;
+  transition: .25s;
+
+  &:hover {
+    opacity: .9;
+  }
+
+  @media (max-width: 560px) {
+    width: 100%;
+  }
 }
 
 .footer-bottom {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+}
+
+.container {
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
 }

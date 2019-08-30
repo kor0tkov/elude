@@ -1,7 +1,6 @@
+@import "./vars";
 .ready {
-  background: url('../../static/img/ready/footer-image@2x.png');
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url('../../static/img/ready/footer-image@2x.png') no-repeat center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -14,7 +13,7 @@
     max-height: 550px;
   }
   &_inner {
-    max-width: 940px;
+    max-width: $max-width;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,11 +38,10 @@
     }
   }
   &_btn {
-    background-color: #d03c31;
+    background-color: $elude-red;
     padding: 20px 70px;
     @media (max-width: 415px) {
       padding: 25px;
-      width: 80%;
     }
   }
 }

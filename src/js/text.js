@@ -1,4 +1,3 @@
-
 //<h1 class="presents_title">
 //London for
 //<span class="presents_title--red">$500</span>,
@@ -6,17 +5,18 @@
 //</h1>
 
 $(document).ready(function () {
-  //initialize swiper when document ready
-  var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    speed: 500,
-    spaceBetween: 0
-  })
-  setInterval(() => {
-    mySwiper.slideNext();
-  }, 2500);
+    //initialize swiper when document ready
+    const interval = $('.presents').attr('data-interval');
+    const mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        speed: 500,
+        spaceBetween: 0
+    });
+    setInterval(() => {
+        mySwiper.slideNext();
+    }, interval);
 });
 
 /*
