@@ -11,7 +11,7 @@ if($_POST) {
     die($response);
   }
 
-  if(!mail($to_Email, $subject, $message, "From: your@mom.fuck \r\n")) {
+  if(!mail($to_Email, $subject, $message, "From: Elude \r\n")) {
     $response = json_encode(array('text' => 'Не могу отправить почту! Пожалуйста, проверьте ваши настройки PHP почты.'));
     die($response);
     } else {
