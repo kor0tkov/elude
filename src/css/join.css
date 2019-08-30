@@ -1,6 +1,5 @@
 .join {
   position: relative;
-  min-width: 620px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -9,10 +8,13 @@
   box-sizing: border-box; }
   @media (max-width: 560px) {
     .join {
-      min-width: 100%;
+      min-width: auto;
       height: 100%;
       border: none;
       padding: 60px 20px 30px; } }
+  @media (min-width: 620px) {
+    .join {
+      min-width: 620px; } }
   .join_title {
     font-size: 60px;
     line-height: 80px;

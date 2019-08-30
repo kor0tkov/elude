@@ -22,21 +22,22 @@
     margin: auto;
     padding: 330px 0 160px 0;
     @media (max-width: 560px) {
-      padding: 215px 20px 70px;
+      padding: 240px 20px 100px;
       width: 100%;
     }
   }
   &_title {
-    font-size: 60px;
+    font-size: 36px;
     color: #fff;
-    margin-bottom: 40px;
-    @media (max-width: 770px) {
-      font-size: 36px;
-      line-height: 48px;
-      letter-spacing: 0.12px;
-    }
-    @media (max-width: 340px) {
-      font-size: 32px;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+    line-height: 80px;
+    font-weight: 600;
+    letter-spacing: 0.12px;
+    margin-bottom: 20px;
+
+    @media (min-width: 560px) {
+      font-size: 60px;
+      margin-bottom: 40px;
     }
   }
   &_btn {

@@ -2,7 +2,6 @@
 
 .join {
   position: relative;
-  min-width: 620px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -10,10 +9,13 @@
   padding: 30px 50px 50px;
   box-sizing: border-box;
   @media (max-width: 560px) {
-    min-width: 100%;
+    min-width: auto;
     height: 100%;
     border: none;
     padding: 60px 20px 30px;
+  }
+  @media (min-width: 620px) {
+    min-width: 620px;
   }
 
   &_title {
