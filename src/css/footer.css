@@ -9,30 +9,31 @@
     margin: auto;
     display: flex;
     justify-content: space-between; }
-    @media (max-width: 980px) {
+    @media (max-width: 560px) {
       .footer_inner {
-        flex-direction: column; } }
+        flex-direction: column;
+        flex-wrap: wrap; } }
   .footer_text {
-    color: #706163;
     font-size: 12px;
-    text-decoration: none; }
-    @media (max-width: 980px) {
-      .footer_text {
-        max-width: 80%; } }
-    @media (max-width: 330px) {
-      .footer_text {
-        max-width: 90%; } }
-    .footer_text--bold {
-      font-family: Montserrat-Medium, serif;
-      color: #948889;
-      font-weight: 900; }
+    line-height: 24px; }
     .footer_text:first-child {
-      color: #706163; }
-      @media (max-width: 980px) {
+      margin-right: 20px; }
+      @media (max-width: 560px) {
         .footer_text:first-child {
           margin-bottom: 15px;
-          line-height: 24px; } }
-  .footer_link {
-    font-size: 12px;
-    text-decoration: none;
-    color: #948889; }
+          margin-right: 0; } }
+    .footer_text-span {
+      font-size: inherit;
+      line-height: inherit;
+      color: #706163; }
+    .footer_text-link {
+      font-size: inherit;
+      line-height: inherit;
+      font-family: Montserrat, sans-serif;
+      color: #948889;
+      text-decoration: none; }
+    .footer_text-bold {
+      font-size: inherit;
+      line-height: inherit;
+      font-family: Montserrat-Medium, sans-serif;
+      color: #706163; }

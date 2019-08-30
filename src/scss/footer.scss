@@ -10,36 +10,43 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-    @media (max-width: 980px) {
+    @media (max-width: 560px) {
       flex-direction: column;
+      flex-wrap: wrap;
     }
   }
   &_text {
-    color: $elude-gray;
     font-size: 12px;
-    text-decoration: none;
-    @media (max-width: 980px) {
-      max-width: 80%;
-    }
-    @media (max-width: 330px) {
-      max-width: 90%;
-    }
-    &--bold {
-      font-family: Montserrat-Medium, serif;
-      color: $elude-gray-light;
-      font-weight: 900;
-    }
+    line-height: 24px;
+
     &:first-child {
-      color: $elude-gray;
-      @media (max-width: 980px) {
+      margin-right: 20px;
+
+      @media (max-width: 560px) {
         margin-bottom: 15px;
-        line-height: 24px;
+        margin-right: 0;
       }
     }
-  }
-  &_link {
-    font-size: 12px;
-    text-decoration: none;
-    color: $elude-gray-light
+
+    &-span {
+      font-size: inherit;
+      line-height: inherit;
+      color: $elude-gray;
+    }
+
+    &-link {
+      font-size: inherit;
+      line-height: inherit;
+      font-family: Montserrat, sans-serif;
+      color: $elude-gray-light;
+      text-decoration: none;
+    }
+
+    &-bold {
+      font-size: inherit;
+      line-height: inherit;
+      font-family: Montserrat-Medium, sans-serif;
+      color: $elude-gray;
+    }
   }
 }
