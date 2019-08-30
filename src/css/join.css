@@ -64,7 +64,8 @@
     padding: 20px;
     color: #fff;
     background-color: #1b4175;
-    transition: .25s; }
+    transition: .25s;
+    width: 100%; }
     .join_btn:disabled {
       opacity: 0.2;
       cursor: not-allowed; }

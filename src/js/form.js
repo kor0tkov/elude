@@ -17,18 +17,32 @@ $("#city").on("change paste keyup", function () {
 });
 
 $('#form').on('change paste keyup', (e) => {
-    document.getElementById('#button').disabled = !(user.name && user.mail && user.city);
+    toggleButton(!(user.name && user.mail && user.city));
 });
+
+function toggleButton(boolean) {
+    document.getElementById('#button').disabled = boolean;
+}
+
+function sendMail() {
+    return new Promise(() => {
+        toggleButton(true);
+        $.post('./src/js/mail.php', user, function (e) {
+        }, 'json');
+    })
+}
 
 $('#form').on('submit', (e) => {
     e.preventDefault();
     const hasValues = !!(user.name && user.mail && user.city);
     if (hasValues) {
-        $.post('./src/js/mail.php', user, (response) => {
-        }, 'json')
-            .then(response => {
-                window.location.hash = null;
-                console.log(response)
+        sendMail()
+            .then(() => {
+                window.location.hash = 'success';
+            })
+            .finally(() => {
+                toggleButton(false);
             })
     }
+    window.location.hash = 'success';
 });

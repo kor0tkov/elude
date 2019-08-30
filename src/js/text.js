@@ -1,52 +1,30 @@
-//<h1 class="presents_title">
-//London for
-//<span class="presents_title--red">$500</span>,
-//because we can
-//</h1>
-
 $(document).ready(function () {
-    //initialize swiper when document ready
-    const interval = $('.presents').attr('data-interval');
-    const mySwiper = new Swiper('.swiper-container', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-        speed: 500,
-        spaceBetween: 0
-    });
-    setInterval(() => {
-        mySwiper.slideNext();
-    }, interval);
-});
+    const presentsContainer = $('.presents');
+    const interval = presentsContainer.attr('data-interval');
+    const speed = presentsContainer.attr('data-speed');
+    let count = 0;
 
-/*
-$('presents').ready(function() {
-  const texts = [
-    `
-    London for
-    <span class="presents_title--red">$500</span>,
-    because we can`,
-    `
-    Moscow for
-    <span class="presents_title--red">$500</span>,
-    because we can
-    </h1>`,
-    `
-    Morocco for
-    <span class="presents_title--red">$500</span>,
-    because we can
-    `,
-    `
-    Tokio for
-    <span class="presents_title--red">$500</span>,
-    because we can
-    `,
-  ];
-  texts.forEach((text, idx) => {
-    setTimeout(() => {
-      document.getElementsByClassName('presents_title')[idx] = text;
-    }, 2500);
-    console.log(idx, text)
-  });
-})
-*/
+    function changeKeyword(word) {
+        const keyword = $('.keyword');
+        keyword.animate({
+            opacity: 0
+        }, speed / 2);
+        setTimeout(() => {
+            document.getElementById('keyword-city').innerHTML = word.city;
+            document.getElementById('keyword-price').innerHTML = word.price;
+            keyword.animate({
+                opacity: 1
+            }, speed / 2);
+        }, speed);
+        changeKeywords();
+    }
+
+    function changeKeywords() {
+        setTimeout(() => {
+            count = (count + 1) % keywords.length;
+            changeKeyword(keywords[count]);
+        }, interval);
+    }
+
+    changeKeywords();
+});

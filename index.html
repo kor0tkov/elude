@@ -14,9 +14,21 @@
   <link rel="stylesheet" href="src/css/footer.css">
   <link rel="stylesheet" href="src/css/modal.css">
   <link rel="stylesheet" href="src/css/join.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script type="text/javascript">
+      const keywords = [{
+          city: 'London',
+          price: 700
+      }, {
+          city: 'Moscow',
+          price: 300
+      }, {
+          city: 'Morocco',
+          price: 250
+      }, {
+          city: 'Tokyo',
+          price: 700
+      }];
+  </script>
 </head>
 <body>
 <header class="header" id="header">
@@ -31,28 +43,15 @@
   </div>
 </header>
 <main class="main">
-  <section class="presents" data-interval="2500">
+  <section class="presents" data-interval="4000" data-speed="800">
     <section class="presents_inner">
       <h3 class="presents_subtitle">Elude presents</h3>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <h1 class="presents_title swiper-slide">
-            London for
-            <span class="presents_title--red">$500</span>,
-            because we can
-          </h1>
-          <h1 class="presents_title swiper-slide">
-            Moscow for
-            <span class="presents_title--red">$500</span>,
-            because we can
-          </h1>
-          <h1 class="presents_title swiper-slide">
-            Morocco for
-            <span class="presents_title--red">$500</span>,
-            because we can
-          </h1>
-        </div>
-      </div>
+      <h1 class="presents_title">
+        <span id="keyword-city" class="presents_title-keyword keyword">London</span>
+        <span class="keyword">for</span>
+        <span id="keyword-price" class="presents_title--red keyword">300</span>
+        because we can.
+      </h1>
       <a href="#openModal" class="button presents_button">Get Started</a>
     </section>
   </section>
@@ -127,7 +126,8 @@
           <h1 class="join_title">Join Us</h1>
           <a href="#" title="Close" class="close">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path fill="#000" fill-rule="nonzero" d="M10.993 12.03l-8.828 8.83c-.244.247-.195.696.05.942a.621.621 0 0 0 .443.185c.16 0 .438.056.56-.067l8.83-8.834 8.76 8.764c.123.123.33.137.491.137.16 0 .32-.061.443-.185.245-.246.364-.765.12-1.012l-8.758-8.76 8.76-8.765c.245-.247.129-.763-.116-1.01-.245-.246-.691-.296-.936-.05l-8.764 8.768-8.833-8.838c-.245-.246-.762-.126-1.007.12-.244.247-.29.693-.046.94l8.83 8.834z"></path>
+              <path fill="#000" fill-rule="nonzero"
+                d="M10.993 12.03l-8.828 8.83c-.244.247-.195.696.05.942a.621.621 0 0 0 .443.185c.16 0 .438.056.56-.067l8.83-8.834 8.76 8.764c.123.123.33.137.491.137.16 0 .32-.061.443-.185.245-.246.364-.765.12-1.012l-8.758-8.76 8.76-8.765c.245-.247.129-.763-.116-1.01-.245-.246-.691-.296-.936-.05l-8.764 8.768-8.833-8.838c-.245-.246-.762-.126-1.007.12-.244.247-.29.693-.046.94l8.83 8.834z"></path>
             </svg>
           </a>
           <p class="join_text">
@@ -149,6 +149,22 @@
           <button id="#button" class="button join_btn" disabled>Submit</button>
         </form>
         <a href="#" class="modal-dialog_layout"></a>
+      </div>
+      <a href="#" class="modal-layout"></a>
+    </div>
+    <div id="success" class="modal">
+      <div class="modal-dialog">
+        <form class="modal-content join">
+          <h1 class="join_title">Thank You!</h1>
+          <a href="#" title="Close" class="close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#000" fill-rule="nonzero"
+                d="M10.993 12.03l-8.828 8.83c-.244.247-.195.696.05.942a.621.621 0 0 0 .443.185c.16 0 .438.056.56-.067l8.83-8.834 8.76 8.764c.123.123.33.137.491.137.16 0 .32-.061.443-.185.245-.246.364-.765.12-1.012l-8.758-8.76 8.76-8.765c.245-.247.129-.763-.116-1.01-.245-.246-.691-.296-.936-.05l-8.764 8.768-8.833-8.838c-.245-.246-.762-.126-1.007.12-.244.247-.29.693-.046.94l8.83 8.834z"></path>
+            </svg>
+          </a>
+          <p class="join_text">We will definitely inform you when we start the service.</p>
+          <a href="#" class="button join_btn">Close</a>
+        </form>
       </div>
       <a href="#" class="modal-layout"></a>
     </div>
