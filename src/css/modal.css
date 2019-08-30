@@ -7,9 +7,8 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
   /* цвет фона */
-  z-index: 1050;
+  z-index: 103;
   opacity: 0;
   /* по умолчанию модальное окно прозрачно */
   transform: translateY(-25px);
@@ -19,6 +18,14 @@
   /* анимация перехода */
   pointer-events: none;
   /* элемент невидим для событий мыши */ }
+  .modal-layout {
+    position: absolute;
+    z-index: 102;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); }
 
 /* при отображении модального окно */
 .modal:target {
@@ -30,6 +37,7 @@
 /* ширина модального окна и его отступы от экрана */
 .modal-dialog {
   position: relative;
+  z-index: 104;
   width: auto;
   margin: 10px;
   top: 50px; }
@@ -37,7 +45,6 @@
     .modal-dialog {
       margin: 0;
       width: 100%;
-      height: 100%;
       top: 0; } }
 
 @media (min-width: 576px) {
