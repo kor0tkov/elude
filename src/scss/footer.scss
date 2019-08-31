@@ -30,6 +30,7 @@
 
     &-span {
       font-size: inherit;
+      font-family: Montserrat-Light, sans-serif;
       line-height: inherit;
       color: $elude-gray;
     }
@@ -47,6 +48,7 @@
       line-height: inherit;
       font-family: Montserrat-Medium, sans-serif;
       color: $elude-gray;
+      font-weight: 500 !important;
     }
   }
 }
