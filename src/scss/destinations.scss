@@ -90,13 +90,13 @@
     }
 
     &-london {
-      background: url('../../static/img/destinations/photo-1.jpg') no-repeat center;
+      background: -webkit-image-set(url('../../static/img/destinations/photo-1.jpg') 1x, url('../../static/img/destinations/photo-1@2x.jpg') 2x) no-repeat center;
       background-size: cover;
       object-fit: contain;
     }
 
     &-moscow {
-      background: url('../../static/img/destinations/photo-2.jpg') no-repeat center;
+      background: -webkit-image-set(url('../../static/img/destinations/photo-2.jpg') 1x, url('../../static/img/destinations/photo-2@2x.jpg') 2x) no-repeat center;
       background-size: cover;
       margin-top: 25px;
       @media (max-width: 770px) {
@@ -105,12 +105,12 @@
     }
 
     &-morocco {
-      background: url('../../static/img/destinations/photo-3.jpg') center;
+      background: -webkit-image-set(url('../../static/img/destinations/photo-3.jpg') 1x, url('../../static/img/destinations/photo-3@2x.jpg') 2x) no-repeat center;
       background-size: cover;
     }
 
     &-tokyo {
-      background: url('../../static/img/destinations/photo-4.jpg') no-repeat center;
+      background: -webkit-image-set(url('../../static/img/destinations/photo-4.jpg') 1x, url('../../static/img/destinations/photo-4@2x.jpg') 2x) no-repeat center;
       background-size: cover;
       margin-top: 25px;
       @media (max-width: 770px) {

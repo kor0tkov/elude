@@ -10,7 +10,7 @@
 }
 
 .presents {
-  background: url('../../static/img/presents/header-image.jpg') no-repeat bottom center;
+  background: -webkit-image-set( url('../../static/img/presents/header-image.jpg') 1x, url('../../static/img/presents/header-image@2x.jpg') 2x ) no-repeat bottom center;
   background-size: cover;
   height: 100%;
   padding: 150px 0 210px 0;
@@ -96,6 +96,7 @@
     &:hover {
       background-color: $elude-red--hover;
     }
+
     @media (max-width: 560px) {
       margin: 0;
     }
