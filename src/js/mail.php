@@ -2,8 +2,8 @@
 if($_POST) {
   $user = $_POST;
   $to_Email = "hello@voynov.co";
-  $subject = 'New Elude Request.';
-  $message = 'Name: '.$user['name'].' E-mail: '.$user['mail'].' City: '.$user['city'];
+  $subject = 'New Elude Request';
+  $message = 'Name: '.$user['name']. \r\n' E-mail: '.$user['mail']. \r\n' City: '.$user['city'];
   $response;
 
   if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
