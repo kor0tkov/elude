@@ -80,14 +80,15 @@
 
 /* свойства для кнопки "Закрыть" */
 .close {
-  position: static;
+  position: absolute;
+  top: 50px;
+  right: 50px;
   opacity: .5;
   width: 24px;
   height: 24px;
   display: flex; }
   @media (max-width: 770px) {
     .close {
-      position: absolute;
       top: 20px;
       right: 20px; } }
 
