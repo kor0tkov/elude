@@ -25,7 +25,8 @@ function toggleButton(boolean) {
 function sendMail() {
     return new Promise(() => {
         toggleButton(true);
-        $.post('./src/js/mail.php', user, function (e) {
+        $.post('./src/js/mail.php', user, function (response) {
+            console.log(response);
         }, 'json');
     })
 }
