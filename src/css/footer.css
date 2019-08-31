@@ -9,7 +9,7 @@
     margin: auto;
     display: flex;
     justify-content: space-between; }
-    @media (max-width: 560px) {
+    @media (max-width: 620px) {
       .footer_inner {
         flex-direction: column;
         flex-wrap: wrap; } }
@@ -18,7 +18,7 @@
     line-height: 24px; }
     .footer_text:first-child {
       margin-right: 20px; }
-      @media (max-width: 560px) {
+      @media (max-width: 620px) {
         .footer_text:first-child {
           margin-bottom: 15px;
           margin-right: 0; } }
@@ -36,6 +36,6 @@
     .footer_text-bold {
       font-size: inherit;
       line-height: inherit;
-      font-family: Montserrat-Medium, sans-serif;
-      color: #706163;
+      font-family: Montserrat-SemiBold, sans-serif;
+      color: #948889;
       font-weight: 500 !important; }
