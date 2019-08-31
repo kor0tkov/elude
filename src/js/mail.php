@@ -1,22 +1,27 @@
 <?php
-if($_POST) {
+
+if ($_POST) {
   $user = $_POST;
-  $to_Email = "hello@voynov.co";
+  
+  $to_Email = 'hello@voynov.co';
   $subject = 'New Elude Request';
-  $message = 'Name: '.$user['name']. \r\n' E-mail: '.$user['mail']. \r\n' City: '.$user['city'];
-  $response;
+  $headers ="From: Elude Today <hello@eludetoday.com>\nReply-to:hello@eludetoday.com\nContent-Type: text/plain;";
 
-  if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
-    $response = json_encode(array('text' => 'Возникла ошибка при отправке данных'));
-    die($response);
+  $message = sprintf('Name: %s %s E-mail: %s %s City: %s %s ',
+    $user['name'], PHP_EOL, $user['mail'], PHP_EOL, $user['city']
+  );
+
+  $isSend = mail($to_Email, $subject, $message, $headers);
+
+  if($isSend)) {
+    $message = [
+      'text' => 'Hello '.$user['name'] .', your message is send.'
+    ];
+  } else {
+    $message = [
+      'text' => 'Error.'
+    ];
   }
 
-  if(!mail($to_Email, $subject, $message, "From: Elude \r\n")) {
-    $response = json_encode(array('text' => 'Не могу отправить почту! Пожалуйста, проверьте ваши настройки PHP почты.'));
-    die($response);
-    } else {
-    $response = json_encode(array('text' => 'Hello '.$user['name'] .', your message is send.'));
-    die($response);
-  }
+  return json_encode($message);
 }
-?>
