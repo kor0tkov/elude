@@ -30,12 +30,16 @@
     .footer_text-link {
       font-size: inherit;
       line-height: inherit;
-      font-family: Montserrat, sans-serif;
-      color: #948889;
+      font-family: Montserrat-Medium, sans-serif;
+      color: #948889 !important;
       text-decoration: none; }
+    @media (max-width: 560px) {
+      .footer_text-break:before {
+        content: '';
+        display: block; } }
     .footer_text-bold {
       font-size: inherit;
       line-height: inherit;
       font-family: Montserrat-SemiBold, sans-serif;
-      color: #948889;
+      color: #706163;
       font-weight: 500 !important; }

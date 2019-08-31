@@ -41,16 +41,26 @@
     &-link {
       font-size: inherit;
       line-height: inherit;
-      font-family: Montserrat, sans-serif;
-      color: $elude-gray-light;
+      font-family: Montserrat-Medium, sans-serif;
+      color: $elude-gray-light !important;
       text-decoration: none;
+    }
+
+    &-break {
+
+      @media (max-width: 560px) {
+        &:before {
+          content: '';
+          display: block;
+        }
+      }
     }
 
     &-bold {
       font-size: inherit;
       line-height: inherit;
       font-family: Montserrat-SemiBold, sans-serif;
-      color: $elude-gray-light;
+      color: $elude-gray;
       font-weight: 500 !important;
     }
   }
