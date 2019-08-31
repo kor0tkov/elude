@@ -1,5 +1,5 @@
 .ready {
-  background: -webkit-image-set(url("../../static/img/ready/footer-image.jpg") 1x, url("../../static/img/ready/footer-image.jpg") 2x) no-repeat top center;
+  background: -webkit-image-set(url("../../static/img/ready/footer-image.jpg") 1x, url("../../static/img/ready/footer-image@2x.jpg") 2x) no-repeat top center;
   background-size: cover;
   display: flex;
   flex-direction: column;
