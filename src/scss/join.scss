@@ -93,7 +93,7 @@
     max-width: 100%;
     padding: 20px;
     color: #fff;
-    background-color: $elude-blue;
+    background-color: $elude-red;
     transition: .25s;
     width: 100%;
     margin-top: auto;
@@ -102,7 +102,7 @@
     &:hover {
 
       &:not(:disabled) {
-        background-color: $elude-blue--hover;
+        background-color: $elude-red--hover;
       }
     }
 

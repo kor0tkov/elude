@@ -40,7 +40,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 104; }
-  @media (max-width: 640px) {
+  @media (max-width: 620px) {
     .modal-dialog {
       transform: translate(0);
       background-color: #fff;
@@ -87,7 +87,7 @@
   width: 24px;
   height: 24px;
   display: flex; }
-  @media (max-width: 770px) {
+  @media (max-width: 620px) {
     .close {
       top: 20px;
       right: 20px; } }

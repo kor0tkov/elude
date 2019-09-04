@@ -39,7 +39,7 @@
   transform: translate(-50%, -50%);
   z-index: 104;
 
-  @media (max-width: 640px) {
+  @media (max-width: 620px) {
     transform: translate(0);
     background-color: #fff;
     margin: 0;
@@ -90,7 +90,7 @@
   width: 24px;
   height: 24px;
   display: flex;
-  @media (max-width: 770px) {
+  @media (max-width: 620px) {
     top: 20px;
     right: 20px;
   }
