@@ -3,7 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px; }
-  @media (max-width: 980px) {
+  @media (max-width: 770px) {
     .follow {
       margin-bottom: 10px; } }
   .follow__title {
@@ -12,7 +12,7 @@
     line-height: 80px;
     text-align: center;
     margin-bottom: 40px; }
-    @media (max-width: 980px) {
+    @media (max-width: 770px) {
       .follow__title {
         padding: 0 20px;
         font-size: 36px;
@@ -22,14 +22,14 @@
     display: flex;
     justify-content: center;
     margin: -20px; }
-    @media (max-width: 980px) {
+    @media (max-width: 770px) {
       .follow__socials {
         margin: -10px; } }
     .follow__socials-item {
       width: 60px;
       height: 60px;
       margin: 20px; }
-      @media (max-width: 980px) {
+      @media (max-width: 770px) {
         .follow__socials-item {
           width: 40px;
           height: 40px;
