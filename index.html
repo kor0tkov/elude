@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8"/>
-  <title>Elude</title>
-  <link rel="shortcut icon" href="./favicon.png" type="image/png">
-  <meta property="fb:pages" content="519874981504426">
-  <link rel="image_src" href="./static/img/share/social.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8"/>
+	<title>Elude</title>
+	<link rel="shortcut icon" href="./favicon.png" type="image/png">
+	<meta property="fb:pages" content="519874981504426">
+	<link rel="image_src" href="./static/img/share/social.jpg">
 
-  <meta property="og:type" content="article"/>
-  <meta property="og:site_name" content="Elude"/>
+	<meta property="og:type" content="article"/>
+	<meta property="og:site_name" content="Elude"/>
 
-  <meta property="og:url" content="https://www.eludetoday.com"/>
+	<meta property="og:url" content="https://www.eludetoday.com"/>
 
-  <meta property="og:title" content="Elude"/>
-  <meta property="og:description" content="Because we can."/>
+	<meta property="og:title" content="Elude"/>
+	<meta property="og:description" content="Because we can."/>
 
-  <meta property="og:image" content="./static/img/share/social.jpg"/>
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+	<meta property="og:image" content="./static/img/share/social.jpg"/>
+	<meta property="og:image:width" content="1200"/>
+	<meta property="og:image:height" content="630"/>
 
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:site" content="@eludetoday"/>
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:site" content="@eludetoday"/>
 
-  <meta name="twitter:title" content="Elude"/>
-  <meta name="twitter:description" content="Because we can."/>
+	<meta name="twitter:title" content="Elude"/>
+	<meta name="twitter:description" content="Because we can."/>
 
-  <meta name="twitter:image" content="./static/img/share/social.jpg"/>
-  <meta name="twitter:image:width" content="1200"/>
-  <meta name="twitter:image:height" content="630"/>
-  <link rel="stylesheet" href="src/css/normalize.css">
-  <link rel="stylesheet" href="src/css/default.css">
-  <link rel="stylesheet" href="src/css/header.css">
-  <link rel="stylesheet" href="src/css/presents.css">
-  <link rel="stylesheet" href="src/css/destinations.css">
-  <link rel="stylesheet" href="src/css/ready.css">
-  <link rel="stylesheet" href="src/css/stay.css">
-  <link rel="stylesheet" href="src/css/footer.css">
-  <link rel="stylesheet" href="src/css/modal.css">
-  <link rel="stylesheet" href="src/css/join.css">
-  <script type="text/javascript">
+	<meta name="twitter:image" content="./static/img/share/social.jpg"/>
+	<meta name="twitter:image:width" content="1200"/>
+	<meta name="twitter:image:height" content="630"/>
+	<link rel="stylesheet" href="src/css/normalize.css">
+	<link rel="stylesheet" href="src/css/default.css">
+	<link rel="stylesheet" href="src/css/header.css">
+	<link rel="stylesheet" href="src/css/presents.css">
+	<link rel="stylesheet" href="src/css/destinations.css">
+	<link rel="stylesheet" href="src/css/follow.css">
+	<link rel="stylesheet" href="src/css/ready.css">
+	<link rel="stylesheet" href="src/css/stay.css">
+	<link rel="stylesheet" href="src/css/footer.css">
+	<link rel="stylesheet" href="src/css/modal.css">
+	<link rel="stylesheet" href="src/css/join.css">
+	<script type="text/javascript">
       const keywords = [{
           city: 'London',
           price: 700
@@ -53,162 +54,179 @@
           city: 'Tokyo',
           price: 700
       }];
-  </script>
+	</script>
 </head>
 <body>
 <header class="header" id="header">
-  <div class="header_inner">
-    <a href="/" class="logo-link">
-      <img class="logo" alt="Elude" src="static/img/header/logo.svg">
-    </a>
-    <nav class="navigation">
-      <a href="#openModal" class="navigation_link">Join Us</a>
-      <a href="#destinations" class="navigation_link lazy-link">Trips</a>
-    </nav>
-  </div>
+	<div class="header_inner">
+		<a href="/" class="logo-link">
+			<img class="logo" alt="Elude" src="static/img/header/logo.svg">
+		</a>
+		<nav class="navigation">
+			<a href="#openModal" class="navigation_link">Join Us</a>
+			<a href="#destinations" class="navigation_link lazy-link">Trips</a>
+		</nav>
+	</div>
 </header>
 <main class="main">
-  <section class="presents" data-interval="4000" data-speed="300">
-    <section class="presents_inner">
-<!--      <h3 class="presents_subtitle">Elude presents</h3>-->
-      <h1 class="presents_title">
-        <span id="keyword-city" class="presents_title-keyword keyword">London</span>
-        <span class="keyword">for</span>
-        <span id="keyword-price" class="presents_title--red keyword">300</span>
-        because we can.
-      </h1>
-      <a href="#openModal" class="button presents_button">Get Started</a>
-    </section>
-  </section>
-  <section class="destinations" id="destinations">
-    <h2 class="destinations_title">Our best destinations</h2>
-    <h4 class="destinations_subtitle">Tell us how much you want to spend, we'll show you the world</h4>
-    <div class="destinations_cities">
-      <div class="destinations_cities-wrapper">
-        <div class="destinations_item">
-          <div class="destinations_img destinations_img-london">
-            <span class="destinations_item-name">London</span>
-          </div>
-          <p class="destinations_item-price">Starts from $700</p>
-          <p class="destinations_item-text">
-            Cosy pubs, green parks
-            and sheer diversity in
-            the British capital
-          </p>
-          <p class="destinations_item-duration">5 days 6 nights</p>
-        </div>
-        <div class="destinations_item">
-          <div class="destinations_img destinations_img-moscow">
-            <span class="destinations_item-name">Moscow</span>
-          </div>
-          <p class="destinations_item-price">Starts from $300</p>
-          <p class="destinations_item-text">
-            Jump into the city that really
-            never sleeps
-          </p>
-          <p class="destinations_item-duration">5 days 6 nights</p>
-        </div>
-        <div class="destinations_item">
-          <div class="destinations_img destinations_img-morocco">
-            <span class="destinations_item-name">Morocco</span>
-          </div>
-          <p class="destinations_item-price">Starts from $250</p>
-          <p class="destinations_item-text">
-            Live in this epic city
-            that combines history
-            width modernity
-          </p>
-          <p class="destinations_item-duration">6 days 7 nights</p>
-        </div>
-        <div class="destinations_item">
-          <div class="destinations_img destinations_img-tokyo">
-            <span class="destinations_item-name">Tokyo</span>
-          </div>
-          <p class="destinations_item-price">Starts from $700</p>
-          <p class="destinations_item-text">
-            Dive into this vibrant
-            and high-tech city
-          </p>
-          <p class="destinations_item-duration">6 days 7 nights</p>
-        </div>
-      </div>
-    </div>
-    <p class="destinations_swipe">Swipe to left</p>
-  </section>
-  <section class="ready">
-    <div class="ready_inner">
-      <h2 class="ready_title">Ready to Elude?</h2>
-      <a href="#openModal" class="button ready_btn">I'm in, Let's Go!</a>
-    </div>
-  </section>
-  <section class="join_modal">
-    <div id="openModal" class="modal">
-      <div class="modal-dialog">
-        <form id="form" class="modal-content join">
-          <div class="join_title">
-            <span>Join Us</span>
-            <a href="#" title="Close" class="close">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path fill="#000" fill-rule="nonzero"
-                  d="M10.993 12.03l-8.828 8.83c-.244.247-.195.696.05.942a.621.621 0 0 0 .443.185c.16 0 .438.056.56-.067l8.83-8.834 8.76 8.764c.123.123.33.137.491.137.16 0 .32-.061.443-.185.245-.246.364-.765.12-1.012l-8.758-8.76 8.76-8.765c.245-.247.129-.763-.116-1.01-.245-.246-.691-.296-.936-.05l-8.764 8.768-8.833-8.838c-.245-.246-.762-.126-1.007.12-.244.247-.29.693-.046.94l8.83 8.834z"></path>
-              </svg>
-            </a>
-          </div>
-          <p class="join_text">
-            Keep up-to-date and be amongst the first to get access
-            to our platform.
-          </p>
-          <label class="join_input">
-            <input id="name" type="text" class="join_input-input" required>
-            <span class="join_input-placeholder">Your Name</span>
-          </label>
-          <label class="join_input">
-            <input id="mail" type="text" class="join_input-input" required>
-            <span class="join_input-placeholder">E-mail</span>
-          </label>
-          <label class="join_input">
-            <input id="city" type="text" class="join_input-input" required>
-            <span class="join_input-placeholder">Home City</span>
-          </label>
-          <button id="#button" class="button join_btn" disabled>Submit</button>
-        </form>
-      </div>
-      <a href="#" class="modal-layout"></a>
-    </div>
-    <div id="success" class="modal">
-      <div class="modal-dialog">
-        <form class="modal-content join">
-          <div class="join_title">
-            <span>Thank You!</span>
-            <a href="#" title="Close" class="close">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path fill="#000" fill-rule="nonzero"
-                  d="M10.993 12.03l-8.828 8.83c-.244.247-.195.696.05.942a.621.621 0 0 0 .443.185c.16 0 .438.056.56-.067l8.83-8.834 8.76 8.764c.123.123.33.137.491.137.16 0 .32-.061.443-.185.245-.246.364-.765.12-1.012l-8.758-8.76 8.76-8.765c.245-.247.129-.763-.116-1.01-.245-.246-.691-.296-.936-.05l-8.764 8.768-8.833-8.838c-.245-.246-.762-.126-1.007.12-.244.247-.29.693-.046.94l8.83 8.834z"></path>
-              </svg>
-            </a>
-          </div>
-          <p class="join_text">We will definitely inform you when we start the service.</p>
-          <a href="#" class="button join_btn">Close</a>
-        </form>
-      </div>
-      <a href="#" class="modal-layout"></a>
-    </div>
-  </section>
+	<section class="presents" data-interval="4000" data-speed="300">
+		<section class="presents_inner">
+			<!--      <h3 class="presents_subtitle">Elude presents</h3>-->
+			<h1 class="presents_title">
+				<span id="keyword-city" class="presents_title-keyword keyword">London</span>
+				<span class="keyword">for</span>
+				<span id="keyword-price" class="presents_title--red keyword">300</span>
+				because we can.
+			</h1>
+			<a href="#openModal" class="button presents_button">Get Started</a>
+		</section>
+	</section>
+	<section class="destinations" id="destinations">
+		<h2 class="destinations_title">Our best destinations</h2>
+		<h4 class="destinations_subtitle">Tell us how much you want to spend, we'll show you the world</h4>
+		<div class="destinations_cities">
+			<div class="destinations_cities-wrapper">
+				<div class="destinations_item">
+					<div class="destinations_img destinations_img-london">
+						<span class="destinations_item-name">London</span>
+					</div>
+					<p class="destinations_item-price">Starts from $700</p>
+					<p class="destinations_item-text">
+						Cosy pubs, green parks
+						and sheer diversity in
+						the British capital
+					</p>
+					<p class="destinations_item-duration">5 days 6 nights</p>
+				</div>
+				<div class="destinations_item">
+					<div class="destinations_img destinations_img-moscow">
+						<span class="destinations_item-name">Moscow</span>
+					</div>
+					<p class="destinations_item-price">Starts from $300</p>
+					<p class="destinations_item-text">
+						Jump into the city that really
+						never sleeps
+					</p>
+					<p class="destinations_item-duration">5 days 6 nights</p>
+				</div>
+				<div class="destinations_item">
+					<div class="destinations_img destinations_img-morocco">
+						<span class="destinations_item-name">Morocco</span>
+					</div>
+					<p class="destinations_item-price">Starts from $250</p>
+					<p class="destinations_item-text">
+						Live in this epic city
+						that combines history
+						width modernity
+					</p>
+					<p class="destinations_item-duration">6 days 7 nights</p>
+				</div>
+				<div class="destinations_item">
+					<div class="destinations_img destinations_img-tokyo">
+						<span class="destinations_item-name">Tokyo</span>
+					</div>
+					<p class="destinations_item-price">Starts from $700</p>
+					<p class="destinations_item-text">
+						Dive into this vibrant
+						and high-tech city
+					</p>
+					<p class="destinations_item-duration">6 days 7 nights</p>
+				</div>
+			</div>
+		</div>
+		<p class="destinations_swipe">Swipe to left</p>
+	</section>
+	<section class="follow">
+		<h2 class="follow__title">Follow us</h2>
+		<div class="follow__socials">
+			<a href="http://instagram.com/elude" target="_blank" class="follow__socials-item">
+				<svg class="follow__socials-icon" height="60" viewBox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="m41.25 0c10.354 0 18.75 8.396 18.75 18.75v22.5c0 10.354-8.396 18.75-18.75 18.75h-22.5c-10.354 0-18.75-8.396-18.75-18.75v-22.5c0-10.354 8.396-18.75 18.75-18.75zm13.125 41.25v-22.5c0-7.238-5.888-13.125-13.125-13.125h-22.5c-7.238 0-13.125 5.887-13.125 13.125v22.5c0 7.237 5.887 13.125 13.125 13.125h22.5c7.237 0 13.125-5.888 13.125-13.125zm-24.375-26.25c8.284 0 15 6.716 15 15s-6.716 15-15 15-15-6.716-15-15 6.716-15 15-15zm0 24.375c5.167 0 9.375-4.208 9.375-9.375 0-5.171-4.208-9.375-9.375-9.375-5.168 0-9.375 4.204-9.375 9.375 0 5.167 4.207 9.375 9.375 9.375zm16.125-23.501a1.999 1.999 0 1 1 0-3.998 1.999 1.999 0 0 1 0 3.998z"/>
+				</svg>
+			</a>
+			<a href="https://www.facebook.com/EIudeToday/" target="_blank" class="follow__socials-item">
+				<svg class="follow__socials-icon" height="60" viewBox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="m42.946 2.012-6.716-.012c-7.545 0-12.421 5.41-12.421 13.782v6.354h-6.753c-.583 0-1.056.511-1.056 1.142v9.207c0 .631.473 1.142 1.056 1.142h6.753v23.231c0 .631.472 1.142 1.056 1.142h8.81c.583 0 1.056-.512 1.056-1.142v-23.231h7.895c.584 0 1.056-.511 1.056-1.142l.003-9.207c0-.303-.111-.593-.309-.807a1.018 1.018 0 0 0 -.747-.335h-7.899v-5.387c0-2.589.57-3.903 3.69-3.903l4.524-.002c.582 0 1.055-.511 1.055-1.142v-8.548c0-.63-.472-1.141-1.054-1.142z"/>
+				</svg>
+			</a>
+		</div>
+	</section>
+	<section class="ready">
+		<div class="ready_inner">
+			<h2 class="ready_title">Ready to Elude?</h2>
+			<a href="#openModal" class="button ready_btn">I'm in, Let's Go!</a>
+		</div>
+	</section>
+	<section class="join_modal">
+		<div id="openModal" class="modal">
+			<div class="modal-dialog">
+				<form id="form" class="modal-content join">
+					<div class="join_title">
+						<span>Join Us</span>
+						<a href="#" title="Close" class="close">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<path fill="#000" fill-rule="nonzero"
+									d="M10.993 12.03l-8.828 8.83c-.244.247-.195.696.05.942a.621.621 0 0 0 .443.185c.16 0 .438.056.56-.067l8.83-8.834 8.76 8.764c.123.123.33.137.491.137.16 0 .32-.061.443-.185.245-.246.364-.765.12-1.012l-8.758-8.76 8.76-8.765c.245-.247.129-.763-.116-1.01-.245-.246-.691-.296-.936-.05l-8.764 8.768-8.833-8.838c-.245-.246-.762-.126-1.007.12-.244.247-.29.693-.046.94l8.83 8.834z"></path>
+							</svg>
+						</a>
+					</div>
+					<p class="join_text">
+						Keep up-to-date and be amongst the first to get access
+						to our platform.
+					</p>
+					<label class="join_input">
+						<input id="name" type="text" class="join_input-input" required>
+						<span class="join_input-placeholder">Your Name</span>
+					</label>
+					<label class="join_input">
+						<input id="mail" type="text" class="join_input-input" required>
+						<span class="join_input-placeholder">E-mail</span>
+					</label>
+					<label class="join_input">
+						<input id="city" type="text" class="join_input-input" required>
+						<span class="join_input-placeholder">Home City</span>
+					</label>
+					<button id="#button" class="button join_btn" disabled>Submit</button>
+				</form>
+			</div>
+			<a href="#" class="modal-layout"></a>
+		</div>
+		<div id="success" class="modal">
+			<div class="modal-dialog">
+				<form class="modal-content join">
+					<div class="join_title">
+						<span>Thank You!</span>
+						<a href="#" title="Close" class="close">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<path fill="#000" fill-rule="nonzero"
+									d="M10.993 12.03l-8.828 8.83c-.244.247-.195.696.05.942a.621.621 0 0 0 .443.185c.16 0 .438.056.56-.067l8.83-8.834 8.76 8.764c.123.123.33.137.491.137.16 0 .32-.061.443-.185.245-.246.364-.765.12-1.012l-8.758-8.76 8.76-8.765c.245-.247.129-.763-.116-1.01-.245-.246-.691-.296-.936-.05l-8.764 8.768-8.833-8.838c-.245-.246-.762-.126-1.007.12-.244.247-.29.693-.046.94l8.83 8.834z"></path>
+							</svg>
+						</a>
+					</div>
+					<p class="join_text">We will definitely inform you when we start the service.</p>
+					<a href="#" class="button join_btn">Close</a>
+				</form>
+			</div>
+			<a href="#" class="modal-layout"></a>
+		</div>
+	</section>
 </main>
 <footer class="footer">
-  <div class="footer_inner">
-    <p class="footer_text">
-      <span class="footer_text-bold">© 2019 Elude App.</span>
-      <span class="footer_text-span">All rights reserved.</span>
-      <a href="#" class="footer_text-link footer_text-break">Privacy Policy</a>
-      <span class="footer_text-span">&</span>
-      <a href="#" class="footer_text-link">Terms of use</a>
-    </p>
-    <p class="footer_text">
-      <span class="footer_text-span">Make with ♥ in</span>
-      <a href="https://pixelscrew.com" target="_blank" class="footer_text-link footer_text-bold">PixelScrew</a>
-    </p>
-  </div>
+	<div class="footer_inner">
+		<p class="footer_text">
+			<span class="footer_text-bold">© 2019 Elude App.</span>
+			<span class="footer_text-span">All rights reserved.</span>
+			<a href="#" class="footer_text-link footer_text-break">Privacy Policy</a>
+			<span class="footer_text-span">&</span>
+			<a href="#" class="footer_text-link">Terms of use</a>
+		</p>
+		<p class="footer_text">
+			<span class="footer_text-span">Make with ♥ in</span>
+			<a href="https://pixelscrew.com" target="_blank" class="footer_text-link footer_text-bold">PixelScrew</a>
+		</p>
+	</div>
 </footer>
 <script src="plugins/jquery-3.3.1.min.js"></script>
 <script src="src/js/lazy-link.js"></script>

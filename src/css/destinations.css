@@ -1,10 +1,10 @@
 .destinations {
   max-width: 960px;
-  margin: auto auto 100px;
+  margin: auto auto 140px;
   background-color: #f8f8f8; }
   @media (max-width: 960px) {
     .destinations {
-      margin-bottom: 0;
+      margin-bottom: 80px;
       padding: 0 20px; } }
   .destinations_title {
     font-size: 60px;
